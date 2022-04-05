@@ -1,7 +1,7 @@
 # Instruction
 Open windows terminal and open the program with the required parameters
 ```
-./YoutubeDownloader.exe {url} {number_of_videos}
+./YoutubeDownloader.exe {url} {number_of_videos | "all" for all videos} {?"low"}
 ```
 ## example
 
