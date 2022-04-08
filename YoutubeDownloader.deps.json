@@ -8,8 +8,10 @@
     ".NETCoreApp,Version=v3.1": {
       "YoutubeDownloader/1.0.0": {
         "dependencies": {
-          "YoutubeExplode": "6.0.8",
-          "YoutubeExplode.Converter": "6.0.8"
+          "System.Drawing.Common": "6.0.0",
+          "TagLibSharp": "2.2.0",
+          "YoutubeExplode": "6.1.0",
+          "YoutubeExplode.Converter": "6.1.0"
         },
         "runtime": {
           "YoutubeDownloader.dll": {}
@@ -36,7 +38,48 @@
         }
       },
       "Microsoft.NETCore.Platforms/5.0.0": {},
+      "Microsoft.Win32.SystemEvents/6.0.0": {
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Win32.SystemEvents.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.52210"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netcoreapp3.1/Microsoft.Win32.SystemEvents.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.52210"
+          }
+        }
+      },
       "System.Buffers/4.5.1": {},
+      "System.Drawing.Common/6.0.0": {
+        "dependencies": {
+          "Microsoft.Win32.SystemEvents": "6.0.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/System.Drawing.Common.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.52210"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netcoreapp3.1/System.Drawing.Common.dll": {
+            "rid": "unix",
+            "assetType": "runtime",
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.52210"
+          },
+          "runtimes/win/lib/netcoreapp3.1/System.Drawing.Common.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.52210"
+          }
+        }
+      },
       "System.Runtime.CompilerServices.Unsafe/5.0.0": {
         "runtime": {
           "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {
@@ -65,26 +108,34 @@
           }
         }
       },
-      "YoutubeExplode/6.0.8": {
+      "TagLibSharp/2.2.0": {
+        "runtime": {
+          "lib/netstandard2.0/TagLibSharp.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.0"
+          }
+        }
+      },
+      "YoutubeExplode/6.1.0": {
         "dependencies": {
           "AngleSharp": "0.16.1"
         },
         "runtime": {
           "lib/netcoreapp3.0/YoutubeExplode.dll": {
-            "assemblyVersion": "6.0.8.0",
-            "fileVersion": "6.0.8.0"
+            "assemblyVersion": "6.1.0.0",
+            "fileVersion": "6.1.0.0"
           }
         }
       },
-      "YoutubeExplode.Converter/6.0.8": {
+      "YoutubeExplode.Converter/6.1.0": {
         "dependencies": {
           "CliWrap": "3.3.3",
-          "YoutubeExplode": "6.0.8"
+          "YoutubeExplode": "6.1.0"
         },
         "runtime": {
           "lib/netcoreapp3.0/YoutubeExplode.Converter.dll": {
-            "assemblyVersion": "6.0.8.0",
-            "fileVersion": "6.0.8.0"
+            "assemblyVersion": "6.1.0.0",
+            "fileVersion": "6.1.0.0"
           }
         }
       }
@@ -117,12 +168,26 @@
       "path": "microsoft.netcore.platforms/5.0.0",
       "hashPath": "microsoft.netcore.platforms.5.0.0.nupkg.sha512"
     },
+    "Microsoft.Win32.SystemEvents/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hqTM5628jSsQiv+HGpiq3WKBl2c8v1KZfby2J6Pr7pEPlK9waPdgEO6b8A/+/xn/yZ9ulv8HuqK71ONy2tg67A==",
+      "path": "microsoft.win32.systemevents/6.0.0",
+      "hashPath": "microsoft.win32.systemevents.6.0.0.nupkg.sha512"
+    },
     "System.Buffers/4.5.1": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-Rw7ijyl1qqRS0YQD/WycNst8hUUMgrMH4FCn1nNm27M4VxchZ1js3fVjQaANHO5f3sN4isvP4a+Met9Y4YomAg==",
       "path": "system.buffers/4.5.1",
       "hashPath": "system.buffers.4.5.1.nupkg.sha512"
+    },
+    "System.Drawing.Common/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NfuoKUiP2nUWwKZN6twGqXioIe1zVD0RIj2t976A+czLHr2nY454RwwXs6JU9Htc6mwqL6Dn/nEL3dpVf2jOhg==",
+      "path": "system.drawing.common/6.0.0",
+      "hashPath": "system.drawing.common.6.0.0.nupkg.sha512"
     },
     "System.Runtime.CompilerServices.Unsafe/5.0.0": {
       "type": "package",
@@ -138,19 +203,26 @@
       "path": "system.text.encoding.codepages/5.0.0",
       "hashPath": "system.text.encoding.codepages.5.0.0.nupkg.sha512"
     },
-    "YoutubeExplode/6.0.8": {
+    "TagLibSharp/2.2.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-QWaQ8NCtk+Nsf1wKr5KhI8sLZ5leNpBVq9yeONLwRDtv/UC1LWwToICndVNYhcdbppA1Tr6v+ikXFDNZZRiVmg==",
-      "path": "youtubeexplode/6.0.8",
-      "hashPath": "youtubeexplode.6.0.8.nupkg.sha512"
+      "sha512": "sha512-X8UOWeaJgHGrN3xilg3O0lqowhUSwNEiGrE8ITDd1rCn14LqGCWKgn5GX++SW4vuXBMne8+pyic6aUvOFQMRlA==",
+      "path": "taglibsharp/2.2.0",
+      "hashPath": "taglibsharp.2.2.0.nupkg.sha512"
     },
-    "YoutubeExplode.Converter/6.0.8": {
+    "YoutubeExplode/6.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-axuiEAyXlI29JsX9dSO3duxioJNokP4fDxiMgXZH9blg8x72hC8y9+fI1ZEhyBVHNjLh6L4BPdZB9KOzrEG53A==",
-      "path": "youtubeexplode.converter/6.0.8",
-      "hashPath": "youtubeexplode.converter.6.0.8.nupkg.sha512"
+      "sha512": "sha512-ZirloBlRv604Cg4ObTRR5mdPnYThe6E1rlkEGUX9O1e4QvoNr8MFhYO/QyCjetByZPICCTT+U/XBJ2Um39CrRQ==",
+      "path": "youtubeexplode/6.1.0",
+      "hashPath": "youtubeexplode.6.1.0.nupkg.sha512"
+    },
+    "YoutubeExplode.Converter/6.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-EfiljF3AWBNWqsp7ulzAR4Wy891+BCY9KWtVWUyXSpcz1UfLB8ViK0j0T8fwWnSTTxChhn/vTxIvzpuw1CdKOQ==",
+      "path": "youtubeexplode.converter/6.1.0",
+      "hashPath": "youtubeexplode.converter.6.1.0.nupkg.sha512"
     }
   }
 }
